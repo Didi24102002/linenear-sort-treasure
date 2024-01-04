@@ -59,19 +59,11 @@
       }
       return false; // Trả về false nếu số không được tìm thấy trong mảng
     }
-    document.getElementById('exitButton').addEventListener('click', function () {
-    // Hiển thị thông báo xác nhận
-    var isConfirmed = window.confirm('Bạn có chắc chắn muốn đóng trình duyệt không?');
-
-    // Kiểm tra xác nhận trước khi đóng trình duyệt
-    if (isConfirmed) {
-        // Đóng trình duyệt hiện tại
-        window.close();
-    }
-});
-
-
-
+     // Thêm sự kiện click cho nút thoát
+     document.getElementById('exitButton').addEventListener('click', function () {
+    // Chuyển hướng người chơi đến trang khác hoặc thực hiện các thao tác thoát game ở đây
+    window.location.href = 'index.html'; // Thay 'trang-moi.html' bằng trang bạn muốn chuyển đến khi thoát
+    });
 
     // Sự kiện click cho nút tải lại trang
     document.getElementById('reloadButton').addEventListener('click', function () {
