@@ -137,7 +137,7 @@ p{
   line-height: 2; /* Chiều cao dòng là 1.5 lần kích thước của font */
 }
 #exitButton {
-  position: fixed;
+  position: absolute;
   bottom: 660px; /* Khoảng cách từ nút đến phía dưới màn hình */
   left: 98%; /* Chuyển nút vào giữa màn hình theo chiều ngang */
   transform: translateX(-50%); /* Dịch chuyển nút ngược lại 50% chiều ngang */
