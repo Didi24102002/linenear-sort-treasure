@@ -51,15 +51,13 @@
   <p>Hết thời gian! Bạn đã không tìm thấy chìa khóa.</p>
   <!-- Nút Chơi Lại -->
 <button onclick="restartGame()">Chơi Lại</button>
-<button id="exitButton">Thoát Game</button>
+
 <!-- Add audio element for game-over sound -->
 <audio id="gameOverSound" src="audio/Thua.mp3" preload="auto"></audio>
 
 <!-- Add audio element for button click sound -->
 <audio id="buttonClickSound" src="../audio/Click.wav" preload="auto"></audio>
-<div id="exitOverlay" style="display: none;">
-  <p>Chuẩn bị thoát game...</p>
-</div>
+
 <script>
   // Hàm xử lý khi trang được tải
   window.onload = function() {
@@ -78,19 +76,6 @@
     setTimeout(function() {
       // Chuyển hướng người chơi đến trang khác hoặc thực hiện các thao tác bắt đầu lại game
       window.location.href = 'index.html'; // Thay 'index.html' bằng trang bạn muốn chuyển đến khi chơi lại
-    }, 1000); // 1000 milliseconds (1 second) - Thời gian chờ có thể điều chỉnh
-  }
-  /// Hàm xử lý khi nhấn nút "Thoát Game"
-  function exitGame() {
-    // Play the button-click sound
-    var buttonClickSound = document.getElementById('buttonClickSound');
-    buttonClickSound.play();
-
-    // Chờ một khoảng thời gian để kết thúc âm thanh trước khi thoát game
-    setTimeout(function() {
-      // Thực hiện các thao tác thoát game, ví dụ như đóng trình duyệt
-      window.close(); // Đóng cửa sổ trình duyệt
-      // Hoặc thực hiện các thao tác khác tùy thuộc vào yêu cầu của bạn
     }, 1000); // 1000 milliseconds (1 second) - Thời gian chờ có thể điều chỉnh
   }
 </script>
