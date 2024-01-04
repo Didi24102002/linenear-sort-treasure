@@ -105,14 +105,10 @@
     object-fit: cover;
     
   }
-  #timer{
-    position: fixed;
-    top: 1000px; /* Điều chỉnh giá trị này để định vị theo chiều dọc */
-    right: 1000px; /* Điều chỉnh giá trị này để định vị theo chiều ngang */
-    background: rgba(0, 0, 0, 0.7);
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 1000;
-  }
-  
+  .right-image {
+    float: right;
+    margin-left: 200px; /* Điều chỉnh khoảng cách giữa ảnh và nội dung bên trái */
+    margin-right: -200px;  /* Không có khoảng cách giữa ảnh và nội dung bên phải */
+    position: relative;
+    top: -520px; /* Điều chỉnh vị trí theo chiều dọc */
+}
