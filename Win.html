@@ -57,7 +57,9 @@
 
 <!-- Add audio element for button click sound -->
 <audio id="buttonClickSound" src="../audio/Click.wav" preload="auto"></audio>
-
+<div id="exitOverlay" style="display: none;">
+  <p>Chuẩn bị thoát game...</p>
+</div>
 <script>
   // Hàm xử lý khi trang được tải
   window.onload = function() {
@@ -78,6 +80,31 @@
       window.location.href = 'index.html'; // Thay 'index.html' bằng trang bạn muốn chuyển đến khi chơi lại
     }, 1000); // 1000 milliseconds (1 second) - Thời gian chờ có thể điều chỉnh
   }
+  //Hàm xử lý thoát game
+  function exitGame() {
+  // Play the button-click sound
+  var buttonClickSound = document.getElementById('buttonClickSound');
+  buttonClickSound.play();
+
+  // Hiển thị thông báo yêu cầu đóng cửa sổ
+  var userConfirmation = confirm("Bạn có chắc chắn muốn thoát game không?");
+
+  // Nếu người chơi chấp nhận, thực hiện các thao tác thoát game
+  if (userConfirmation) {
+    setTimeout(function() {
+      console.log('Thoát Game được kích hoạt');
+
+      // Thực hiện các thao tác thoát game, ví dụ như đóng overlay
+      var overlay = document.getElementById('exitOverlay');
+      if (overlay) {
+        overlay.style.display = 'none';
+      }
+
+      // Đóng cửa sổ
+      window.close();
+    }, 1000); // 1000 milliseconds (1 second) - Thời gian chờ có thể điều chỉnh
+  }
+}
 </script>
 
 </bodystyle=>
