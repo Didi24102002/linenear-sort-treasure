@@ -94,7 +94,7 @@ body {
   top: 40px; /* Điều chỉnh khoảng cách từ trên xuống */
   right: 1300px; /* Điều chỉnh khoảng cách từ phải sang trái */
   color: rgb(20, 19, 19); /* Màu chữ sẽ phù hợp với nền của trò chơi của bạn */
-  font-size: 18px; /* Điều chỉnh kích thước chữ nếu cần */
+  font-size: 25px; /* Điều chỉnh kích thước chữ nếu cần */
 }
 
   #message {
