@@ -100,7 +100,7 @@ body {
     color: #f7f6f6;
     font-size: 30px;
     font-weight: bold; /* Sử dụng font-weight để làm chữ in đậm */
-    position: absolute;
+    position: fixed;
     top: 400px;
     right: 450px;
     width: auto;
