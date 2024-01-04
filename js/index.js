@@ -41,7 +41,7 @@ function linear_search(key){
               j = j + 1;
               linear_search(key);
           }
-      }, 1000);
+      }, 2000);
       
     }}
 $(".show-preview").css({
