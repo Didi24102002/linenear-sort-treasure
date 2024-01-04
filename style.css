@@ -139,16 +139,16 @@ p{
 }
 #exitButton {
   position: fixed;
-  top: 10px; /* Khoảng cách từ nút đến phía dưới màn hình */
-  right: 2%; /* Chuyển nút vào giữa màn hình theo chiều ngang */
+  top: -30px; /* Khoảng cách từ nút đến phía dưới màn hình */
+  right: -3%; /* Chuyển nút vào giữa màn hình theo chiều ngang */
   transform: translateX(-50%); /* Dịch chuyển nút ngược lại 50% chiều ngang */
   cursor: pointer;
 }
 #reloadButton{
   position: fixed;
-  top: 10px; /* Khoảng cách từ nút đến phía dưới màn hình */
+  top: -30px; /* Khoảng cách từ nút đến phía dưới màn hình */
   /*top: 0px; /* Khoảng cách từ nút đến phía trên màn hình */
-  left: 2%; /* Chuyển nút vào giữa màn hình theo chiều ngang */
+  left: 0%; /* Chuyển nút vào giữa màn hình theo chiều ngang */
   transform: translateX(-50%); /* Dịch chuyển nút ngược lại 50% chiều ngang */
   cursor: pointer;
 }
