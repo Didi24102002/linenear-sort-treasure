@@ -51,7 +51,7 @@
   <p>Hết thời gian! Bạn đã không tìm thấy chìa khóa.</p>
   <!-- Nút Chơi Lại -->
 <button onclick="restartGame()">Chơi Lại</button>
-<button onclick="closeBrowser()">Tắt Trình Duyệt</button>
+<button onclick="closeBrowser()">Tắt Game</button>
 
 <!-- Add audio element for game-over sound -->
 <audio id="gameOverSound" src="audio/Thua.mp3" preload="auto"></audio>
@@ -82,7 +82,7 @@
   //Hàm xử lý khi nhấn nút thoát
   function closeBrowser() {
     // Hiển thị thông báo xác nhận
-    var isConfirmed = confirm("Bạn có chắc muốn đóng trình duyệt không?");
+    var isConfirmed = confirm("Bạn có chắc muốn tắt game không?");
 
     // Nếu người dùng xác nhận, thì thực hiện đóng trình duyệt
     if (isConfirmed) {
