@@ -221,7 +221,20 @@ function createGrid() {
             html_out += '<p>Thời gian hoàn thành: ' + gameTimeInSeconds + ' giây</p>';
             // Thêm nút bắt đầu lại
             html_out += '<button id="restartButton">Chơi Lại</button>';
+           // Thêm nút tắt trình duyệt
+           html_out += '<button id="closeButton">Đóng Trình Duyệt</button>';
             $('body').html(html_out);
+            // Gắn sự kiện click cho nút tắt trình duyệt
+              $('#closeButton').on('click', function() {
+            // Hiển thị hộp thoại xác nhận
+            var isConfirmed = confirm('Bạn có chắc muốn đóng cửa sổ không?');
+
+            // Nếu người dùng chọn OK trong hộp thoại xác nhận
+          if (isConfirmed) {
+          window.close(); // Đóng trình duyệt
+          }
+        // Nếu người dùng chọn Cancel, không làm gì cả
+        });
             
             console.log('đã tìm thấy');
         }, 750); // 750 milliseconds = 0.75 giây (thay đổi số này nếu bạn muốn thay đổi thời gian chờ)
