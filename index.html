@@ -4,14 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrangChuGame</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+
+        button {
+            position: absolute;
+            top: 10px; /* điều chỉnh top theo nhu cầu của bạn */
+            left: 1460px; /* điều chỉnh left theo nhu cầu của bạn */
+            transform: translateX(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.js"></script>
     <script src="//cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
     <script type="module" src="js/game.js"></script>
-    
-    </head>
-<body style="height: 100vh; width: 100vw; ">
-
-</div>
+    <script>
+        function openAndCloseWindow() {
+            var isConfirmed = confirm("Bạn có chắc chắn muốn đóng cửa sổ không?");
+            if (isConfirmed) {
+                window.close();
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="openAndCloseWindow()" onmousedown="openAndCloseWindow()">
+        <img src="assets/Thoat.png" alt="Open and Close Window">
+    </button>
+    <script>
+        function closeWindowWithConfirmation() {
+            // Hiển thị hộp thoại xác nhận trước khi đóng cửa sổ
+            var isConfirmed = confirm("Bạn có chắc chắn muốn đóng cửa sổ không?");
+            
+            // Nếu người dùng chọn "OK", đóng cửa sổ
+            if (isConfirmed) {
+                window.close();
+            }
+        }
+    </script>
 </body>
 </html>
