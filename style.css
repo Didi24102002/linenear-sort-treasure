@@ -118,6 +118,15 @@ body {
     cursor: pointer; /* Con trỏ thành bàn tay khi di chuột vào nút */
     margin-top: 20px; /* Khoảng cách từ nút đến các phần khác */
 }
+#closeButton{
+  background-color: #164788; /* Màu nền xanh lá cây */
+    color: white; /* Màu chữ trắng */
+    padding: 15px 30px; /* Tăng kích thước lề */
+    border: 2px solid white; /* Đường viền màu trắng, có thể điều chỉnh kích thước và màu sắc theo ý muốn */
+    border-radius: 5px; /* Góc cong cho nút */
+    cursor: pointer; /* Con trỏ thành bàn tay khi di chuột vào nút */
+    margin-top: 20px; /* Khoảng cách từ nút đến các phần khác */
+}
 
 #restartButton:hover {
     background-color: #39543a; /* Màu nền xanh lá cây đậm khi di chuột vào nút */
