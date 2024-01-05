@@ -222,12 +222,12 @@ function createGrid() {
             // Thêm nút bắt đầu lại
             html_out += '<button id="restartButton">Chơi Lại</button>';
            // Thêm nút tắt trình duyệt
-           html_out += '<button id="closeButton">Đóng Trình Duyệt</button>';
+           html_out += '<button id="closeButton">Tắt Game</button>';
             $('body').html(html_out);
             // Gắn sự kiện click cho nút tắt trình duyệt
               $('#closeButton').on('click', function() {
             // Hiển thị hộp thoại xác nhận
-            var isConfirmed = confirm('Bạn có chắc muốn đóng cửa sổ không?');
+            var isConfirmed = confirm('Bạn có chắc muốn tắt game không?');
 
             // Nếu người dùng chọn OK trong hộp thoại xác nhận
           if (isConfirmed) {
